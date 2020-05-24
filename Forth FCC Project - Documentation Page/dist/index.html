@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<title> FCC RWB Asignment 4: CSS Documentation </title>
+  <div class="container">
+<nav id="navbar">
+  <header class="logo">
+    <img class="img-logo" src="https://i.imgur.com/yzvtc44.png" alt="css logo containing the css abreviation plus a styled 3 on a blue background">
+         <p class="visibility"> CSS Documentation</p> 
+  </header>
+  <ul>
+    <li><a class="nav-link" href="#Overview">Overview</a></li>
+    <li><a class="nav-link" href="#What_is_css">What is CSS</a></li>
+    <li><a class="nav-link" href="#What_is_css_for">What is CSS for</a></li>
+    <li><a class="nav-link" href="#Css_syntax">CSS syntax</a></li>
+    <li><a class="nav-link" href="#Css_modules">CSS modules</a></li>
+    <li><a class="nav-link" href="#Css_specifications">CSS specifications</a></li>
+    <li><a class="nav-link" href="#Browser_support">Browser support</a></li>
+    <li><a class="nav-link" href="#What's_next">What's next</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  
+  <main id="main-doc" >
+    <section class="main-section" id="Overview">
+      <header>Overview</header>
+      <article>
+      <h2>Welcome to CSS</h2>
+      <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+       <ol type="a"> 
+<li>CSS is one of the core languages of the open Web and is standardized across Web browsers according to the W3C specification. Previously development of various parts of CSS specification was done synchroniously, which allowed versioning of the latest recommendation. You might have heard about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version.</li>
+<br>       
+<li>From CSS3, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations seperately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of CSS specification.</li>
+        </ol>
+      </article>
+    </section>
+    
+<section class="main-section" id="What_is_css">
+  <header>What is CSS</header>
+<article>     
+<p>CSS is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</p>
+
+<p>CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is, with a simple syntax example, and also covers some key terms about the language.</p>
+  
+ <table>
+   <tr>
+     <th class="uppercase">
+       Good to know
+     </th>
+   </tr>
+   <tr>
+     <td>
+       <ol type="a">
+         <p>Prerequisites:</p> <li>Basic computer literacy;</li> <li>Basic software installed;</li><li>Basic knowledge of working with files;</li><li>And HTML basics (study <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="_blank" style="text-decoration:none;"rel="noopener" >Introduction to HTML);</a></li>
+       </ol>
+       <ol type="a">
+         <p>Objective: <li>To learn what CSS is.</li></p>
+       </ol>
+   </td>
+  </tr>
+ </table>
+  
+  <p>In the Introduction to HTML module there is covered what HTML is, and how it is used to mark up documents. These documents will be readable in a web browser. Headings will look larger than regular text, paragraphs break onto a new line and have space between them. Links are colored and underlined to distinguish them from the rest of the text. What you are seeing is the browser's default styles — very basic styles that the browser applies to HTML to make sure it will be basically readable even if no explicit styling is specified by the author of the page.
+        
+  <div class="help-img">
+    <img src="https://i.imgur.com/6t2GDKs.png" alt="example of how a page looks using just html" >
+  </div>   
+  <p> However, the web would be a boring place if all websites looked like that. Using CSS you can control exactly how HTML elements look in the browser, presenting your markup using whatever design you like.</p>
+  </article>
+    </section>
+    
+    <section class="main-section" id="What_is_css_for">
+      <header>What is CSS for</header>
+      <article>
+        <p>As we have mentioned before, CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.</p>
+        
+        <p>A document is usually a text file structured using a markup language — HTML is the most common markup language, but you may also come across other markup languages such as <a href="https://developer.mozilla.org/en-US/docs/Glossary/SVG" target="_blank" rel="noopener" style="text-decoration:none">SVG</a> or <a href="https://developer.mozilla.org/en-US/docs/Glossary/XML" target="_blank" rel="noopener" style="text-decoration: none">XML</a>.
+          <p> Presenting a document to a user means converting it into a form usable by your audience. Browsers, like Firefox, Chrome, or Edge , are designed to present documents visually, for example, on a computer screen, projector or printer.</p>
+        
+        <article class="helpful">
+          
+          <p><strong>Note:</strong> A browser is sometimes called a user agent, which basically means a computer program that represents a person inside a computer system. Browsers are the main type of user agent we think of when talking about CSS, however, it is not the only one. There are other user agents available — such as those which convert HTML and CSS documents into PDFs to be printed.</p>
+        </article>
+        
+        <p>CSS can be used for very basic document text styling — for example changing the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank" rel="noopener" style="text-decoration: none;">color</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" style ="text-decoration:none;" target="_blank" rel="noopener">size</a> of headings and links. It can be used to create layout — for example<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Column_layouts" style="text-decoration:none;" target="_blank" rel="noopener"> turning a single column of text into a layout</a> with a main content area and a sidebar for related information. It can even be used for effects such as <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations" style="text-decoration= none;" target="_blank" rel="noopener"> animation</a>. Have a look at the links in this paragraph for specific examples.</p>
+      </article>
+    </section>
+    
+  <section class="main-section" id="Css_syntax">
+    <header>CSS syntax</header>
+    <article>
+    <p>CSS is a rule-based language — you define rules specifying groups of styles that should be applied to particular elements or groups of elements on your web page. For example "I want the main heading on my page to be shown as large red text."
+
+      The following code shows a very simple CSS rule that would achieve the styling described above:</p>
+    <code class="code">
+      <p>h1{<br>
+       color: red;
+       <br> font-size: 5em;<br>
+        }</p>
+        </code>
+    
+    <p>The rule opens with a selector. This selects the HTML element that we are going to style. In this case we are styling level one headings <code>(&lt;h1&gt;)</code>.</p>
+      
+    <p>We then have a set of curly braces <code>{ }</code>. Inside those will be one or more <strong>declarations</strong>, which take the form of <strong>property</strong> and <strong>value</strong> pairs. Each pair specifies a property of the element(s) we are selecting, then a value that we'd like to give the property.</p>
+    
+    <p> Before the colon, we have the property, and after the colon, the value. CSS properties have different allowable values, depending on which property is being specified. In our example, we have the <code>color</code> property, which can take various <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#Color" style="text-decoration: none;" target="_blank" rel="noopener">color values</a>. We also have the <code>font-size</code> property. This property can take various <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#Numbers_lengths_and_percentages" style="text-decoration: none;" target="_blank" rel="noopener">size units</a> as a value.</p>
+      
+      <p> A CSS stylesheet will contain many such rules, written one after the other.</p>
+      
+      <code class="code"> 
+        <p>h1{<br>
+       color: red;
+       <br> font-size: 5em;<br>
+          }</p>
+        <p>p{<br>
+          color: black;<br>
+          }</p>
+      </code>
+      
+      <p>You will find that you quickly learn some values, whereas others you will need to look up. The individual property pages on MDN give you a quick way to look up properties and their values when you forget, or want to know what else you can use as a value.</p>
+    </article>
+   
+     <article class="helpful">
+          
+          <p><strong>Note:</strong> You can find links to all the CSS property pages ( <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" style="text-decoration: none;" target="_blank" rel="noopener">along with other CSS features</a>) listed on the MDN CSS reference. Alternatively, you should get used to searching for "mdn css-feature-name" in your favourite search engine whenever you need to find out more information about a CSS feature. For example, try searching for "mdn color" and "mdn font-size"!</p>
+        </article>
+     </section>
+    
+    <section class="main-section" id="Css_modules">
+      <header>CSS Modules</header>
+      <article>
+        <p>As there are so many things that you could style using CSS, the language is broken down into modules. You'll see reference to these modules as you explore MDN and many of the documentation pages are organized around a particular module. For example, you could take a look at the MDN reference to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders" style="text-decoration:none;" target="_blank" rel="noopener"> Backgrounds and Borders</a> module to find out what its purpose is, and what different properties and other features it contains. You will also find links to the <em>CSS Specification</em> that defines the technology (see below).</p>
+        
+        <p> At this stage you don't need to worry too much about how CSS is structured, however it can make it easier to find information if, for example, you are aware that a certain property is likely to be found among other similar things and are therefore probably in the same specification. </p>
+        
+        <p> For a specific example, let's go back to the Backgrounds and Borders module — you might think that it makes logical sense for the <code> background-color</code> and <code>border-color</code> properties to be defined in this module. And you'd be right.
+      </article>
+    </section>
+    
+      <section class="main-section" id="Css_specifications">
+        <header>CSS Specifications</header>
+        <p>All web standards technologies (HTML, CSS, JavaScript, etc.) are defined in giant documents called specifications (or simply "specs"), which are published by standards organizations (such as the W3C, WHATWG, ECMA, or Khronos) and define precisely how those technologies are supposed to behave.<p/>
+
+        <p>CSS is no different — it is developed by a group within the W3C called the <a href="https://www.w3.org/Style/CSS/" style="text-decoration:none;" target="_blank" rel="noopener"> CSS Working Group</a>. This group is made of representatives of browser vendors and other companies who have an interest in CSS. There are also other people, known as invited experts, who act as independent voices; they are not linked to a member organization.</p>
+        <ol type="a">
+       <p><li>New CSS features are developed, or specified, by the CSS Working Group. Sometimes because a particular browser is interested in having some capability, other times because web designers and developers are asking for a feature, and sometimes because the Working Group itself has identified a requirement. CSS is constantly developing, with new features coming available. However, a key thing about CSS is that everyone works very hard to never change things in a way that would break old websites. A website built in 2000, using the limited CSS available then, should still be usable in a browser today!</li></p>
+
+      <p><li>As a newcomer to CSS, it is likely that you will find the CSS specs overwhelming — they are intended for engineers to use to implement support for the features in user agents, not for web developers to read to understand CSS. Many experienced developers would much rather refer to MDN documentation or other tutorials. It is however worth knowing that they exist, understanding the relationship between the CSS you are using, browser support (see below), and the specs.</li></p>
+        </ol>
+      </article>
+    </section>
+
+    <section class="main-section" id="Browser_support">
+      <header>Browser support</header>
+      <article>
+        <p>Once CSS has been specified then it is only useful for us in developing web pages if one or more browsers have implemented it. This means that the code has been written to turn the instruction in our CSS file into something that can be output to the screen. We'll look at this process more in the lesson <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works" style="text-decoration:none;" target="_blank" rel="noopener">  How CSS works</a>. It is unusual for all browsers to implement a feature at the same time, and so there is usually a gap where you can use some part of CSS in some browsers and not in others. For this reason, being able to check implementation status is useful. On each property page on MDN you can see the status of the property you are interested in, so you can tell if you will be able to use it on a website.</p>
+        <p> What follows is the compat data chart for the CSS <code>font-family</code> property.</p>
+        <img class="help-img" src="https://i.imgur.com/9e8XlTV.png" alt="browsers available and their css support" style="height: 310px; width: 850px;">
+      </article>
+    </section>
+    
+    <section class="main-section" id="What's_next">
+      <header>What's next</header>
+      <article>
+    <p> Now that you have some understanding of what CSS is, I encourage you to move on to <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works" target="_blank" style:"text-decoration:none;" rel="noopener"> Getting started with CSS</a>, where you can start to write some CSS yourself.</a></p>
+      </article>
+    </section>
+      
+    <hr>
+    
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        All the informations presented in this page were taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps" target="_blank" rel="noopener">MDN</a>
+        </article>
+        </section>
+      </main>
+  </div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
