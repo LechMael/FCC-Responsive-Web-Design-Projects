@@ -1,0 +1,198 @@
+*{
+  box-sizing: border-box;
+}
+html,
+body{
+  font-family: 'Roboto Slab';
+  text-align: center;
+  color: #FDB927;
+  display: block;
+  font-size: 15px;
+}
+  
+#main {
+  margin-top: auto;
+  padding: 100px;
+  border: 0px solid;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #552583, #5b278b,#7532b3);
+}
+
+#title{
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 0.01px;
+  font-family: 'Bungee Shade';
+  
+}
+   #last-statement {
+  color: #FFFFFF;
+  margin-top: 90px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
+    }
+
+#subtitle{
+  text-transform: uppercase;
+  font-size: 90px;
+  line-height: 0.01px;
+  font-family: 'Bungee Shade';
+}
+
+img{
+max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+  display: block;
+  border-color: #FDB927;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+#img-div {
+  max-width: 84%;
+  height: auto;
+  margin: auto ;
+ 
+}
+
+#img-caption {
+ 
+  color: #FDB927;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+ 
+}
+
+#timeline-title {
+  margin-top: auto;
+  margin-bottom: 70px;
+  padding-top: 120px;
+  text-align: center;
+  font-size: 50px;
+  color: #FDB927;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #FDB927;
+  top: 0;
+  bottom: 62%;
+  left: 50%;
+  margin-left: -3px;
+}
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #FDB927;
+  border: 4px solid #552583;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #FDB927;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #FDB927;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #FDB927;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #FDB927 transparent #FDB927;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+    /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  .right{
+    left: 0%
+  }
+}
+
+
+ 
+ 
